@@ -4,18 +4,18 @@
  *
  * @author Nicholas Un
  * @version 1.0, 10/13/23
- * @param <E> Element referenced by the Node
+ * @param <E> Node's Element
  */
 public class Node<E> {
     private E element;
     private Node<E> next; private Node<E> previous;
 
     /**
-     * When a Node is made, adds the Element, Next Node, and Previous Node references
+     * When a Node is made, adds the Element, Next Node, and Previous Node
      *
-     * @param element Element the Node References
-     * @param next Next Node in the DoublyLinkedList that is referenced
-     * @param previous Previous Node in the DoublyLinkedList that is referenced
+     * @param element Node's Element
+     * @param next Next Node in the DoublyLinkedList
+     * @param previous Previous Node in the DoublyLinkedList
      */
     public Node(E element, Node next, Node previous){
         this.element = element;
@@ -24,7 +24,7 @@ public class Node<E> {
     }
 
     /**
-     * Returns the Element that the Node references
+     * Returns the Node's Element
      *
      * @return Node's Referenced Element
      */
@@ -32,7 +32,7 @@ public class Node<E> {
         return element;
     }
     /**
-     * Changes the Element that the Node references
+     * Changes Node's element
      *
      * @param element The new Element that the Node now references
      */
@@ -58,7 +58,7 @@ public class Node<E> {
         return previous;
     }
     /**
-     * Changes the next Node referenced in the DoublyLinkedList
+     * Changes the next Node
      *
      * @param next The new next Node that the Node now references
      */
@@ -66,20 +66,11 @@ public class Node<E> {
         this.next =  next;
     }
     /**
-     * Changes the next Node referenced in the DoublyLinkedList
+     * Changes the previous Node
      *
      * @param previous The new previous Node that the Node now references
      */
     public void setPreviousNode(Node previous){
         this.previous =  previous;
-    }
-
-    /**
-     * Returns the Element referenced in the Node
-     *
-     * @return Element referenced by Node
-     */
-    public E getValue(){
-        return element;
     }
 }
